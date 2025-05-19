@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    
+}
+
+.top{
+    height: 200px;
+    width: 2118px;
+    background-color: aquamarine;
+    display: flex;
+    border-bottom: 4px solid rgb(64, 202, 168);
+}
+
+.logo1{
+    position: relative;
+    right: -20px;
+    border-radius: 500px;
+    height: 150px;
+    padding: 10px;
+}
+
+h1{
+    position: relative;
+    left: 20cm;
+    top: 3cm;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(42, 48, 53);
+    
+}
+
+.logo2{
+    position: relative;
+    left: 780px;
+    top: 125px;
+    height: 50px;
+    width: 50px;
+    background-image: url(/imagenes/tick.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10cm;
+}
+
+.columnas{
+    display: flex;;
+}
+
+.izq{
+    height: 1060px;
+    width: 200px;
+    background-color: rgb(64, 202, 168);
+}
+
+.der{
+    position: relative;
+    left: 583px;
+    height: 1060px;
+    width: 200px;
+    background-color : rgb(64, 202, 168);
+}
+
+.list{
+    position: relative;
+    left: 6cm;
+    top: 2cm;
+    width: 30cm;
+    height: 24cm;
+    background-color: antiquewhite;
+    padding-bottom: 2cm;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(27, 29, 29);
+    border-bottom: 5px solid whitesmoke;
+    font-weight: 600;
+}
+
+.hoja{
+    position: relative;
+    top: 3cm;
+    left: 5cm;
+    height: 20cm;
+    width: 20cm;
+    background-color: aliceblue;
+}
+
+li{
+    position: relative;
+    top: 1cm;
+    border-bottom: 4px solid black;
+}
+
+.add{
+    position: relative;
+    bottom: 760px;
+    left: 880px;
+    color: aliceblue;
+    background-color:  rgb(64, 202, 168);
+    border: 0;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.texto{
+    position: relative;
+    bottom: 700px;
+    left: 690px;
+}
+
+li{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.delete{
+    position: relative;
+    left: 560px;
+    bottom: 4px;
+    background-color: rgb(212, 94, 94);
+    padding: 7px;
+    color: black;
+    font-size: medium;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}

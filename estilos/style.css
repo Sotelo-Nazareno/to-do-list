@@ -5,7 +5,7 @@ body{
 
 .top{
     height: 200px;
-    width: 2118px;
+    width: 100%;
     background-color: aquamarine;
     display: flex;
     border-bottom: 4px solid rgb(64, 202, 168);
@@ -21,7 +21,7 @@ body{
 
 h1{
     position: relative;
-    left: 20cm;
+    left: 16cm;
     top: 3cm;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(42, 48, 53);
@@ -30,7 +30,7 @@ h1{
 
 .logo2{
     position: relative;
-    left: 780px;
+    left: 850px;
     top: 125px;
     height: 50px;
     width: 50px;
@@ -41,19 +41,21 @@ h1{
 }
 
 .columnas{
-    display: flex;;
+    display: flex;
+    background-color: rgb(237, 238, 166);
+    height: 100vh;
 }
 
 .izq{
-    height: 1060px;
+    height: 100%;
     width: 200px;
     background-color: rgb(64, 202, 168);
 }
 
 .der{
-    position: relative;
-    left: 583px;
-    height: 1060px;
+    position: absolute;
+    right: 0;
+    height: 100%;
     width: 200px;
     background-color : rgb(64, 202, 168);
 }
@@ -64,7 +66,6 @@ h1{
     top: 2cm;
     width: 30cm;
     height: 24cm;
-    background-color: antiquewhite;
     padding-bottom: 2cm;
 }
 
@@ -78,49 +79,57 @@ h2{
 
 .hoja{
     position: relative;
-    top: 3cm;
-    left: 5cm;
-    height: 20cm;
-    width: 20cm;
+    top: 20px;
+    left: 350px;
+    height: 800px;
+    width: 800px;
     background-color: aliceblue;
-}
-
-li{
-    position: relative;
-    top: 1cm;
-    border-bottom: 4px solid black;
+    border: 2px solid gray;
+    overflow: auto;
 }
 
 .add{
     position: relative;
-    bottom: 760px;
-    left: 880px;
+    bottom: 50px;
+    left: 440px;
     color: aliceblue;
     background-color:  rgb(64, 202, 168);
-    border: 0;
     border-radius: 5px;
-    padding: 12px;
+    padding: 10px;
 }
 
-.texto{
+#texto{
     position: relative;
-    bottom: 700px;
-    left: 690px;
+    left: 440px;
+    bottom: 50px;
+    padding: 10px;
 }
 
 li{
+    position: relative;
+    top: 2cm;
+    right: 12cm;
+    border-bottom: 2px solid black;
+    margin: 30px;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
     font-weight: 600;
+    list-style-type: none;
 }
 
-.delete{
-    position: relative;
-    left: 560px;
-    bottom: 4px;
-    background-color: rgb(212, 94, 94);
-    padding: 7px;
-    color: black;
-    font-size: medium;
-    font-family:Georgia, Times, 'Times New Roman', serif;
+footer{
+    display: flex;
+}
+
+.final{
+    background-color: aquamarine;
+    width: 100%;
+    height: 2cm;
+    border-top: 4px solid rgb(64, 202, 168);
+}
+
+.sup{
+    width: 100%;
+    height: 10%;
+    background-color: black;
 }

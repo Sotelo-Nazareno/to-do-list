@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haciendo una lista</title>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/estilos/style.css">
+</head>
+<body>
+    <nav class="top">
+        <img class="logo1" src="/imagenes/lista.png" alt="Imagen de una lista">
+        <div class="logo2"></div>
+        <h1>Crea tu Lista</h1>
+    </nav>
+
+    <div class="columnas">
+        <div class="izq"></div>
+        <div class="der"></div>
+        <div class="hoja">
+            <div class="sup"></div>
+        <input type="text" id="texto" placeholder="Ingrese su tarea">
+        <button onclick="agregarTarea()" class="add">Agregar Tarea</button>
+        </div>
+        <ul id="listaTareas"></ul>
+    </div>
+    <footer>
+        <div class="final"></div>
+    </footer>
+</body>
+</html>

@@ -22,11 +22,12 @@ nuevaTarea.style.listStyleType="none";
 //Creo el boton de eliminar
 let botonEliminar = document.createElement("button");
 botonEliminar.textContent = "Eliminar"
-botonEliminar.style.backgroundColor = "rgb(228, 231, 15)";
+botonEliminar.style.backgroundColor = "rgb(125, 20, 173)";
 botonEliminar.style.borderRadius= "20px";
 botonEliminar.style.padding="10px";
 botonEliminar.style.fontFamily="calibri";
 botonEliminar.style.fontWeight= "800";
+botonEliminar.style.color= "white"
 botonEliminar.onclick = function() {nuevaTarea.remove();}
 
 //Concateno el elemento de la lista con el boton de eliminar
@@ -38,7 +39,13 @@ document.getElementById("listaTareas").appendChild(nuevaTarea);
 //Limpiar el canal de texto al agregar la tarea
 document.getElementById("texto").value = "";
 
-}
+};
 
 var addTarea = document.querySelector(".add");
 addTarea.addEventListener("click",agregarTarea);
+
+document.addEventListener("keydown", (event)=>{
+    if(event.key === "Enter"){
+    agregarTarea();
+    }
+});

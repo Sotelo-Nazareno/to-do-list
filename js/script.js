@@ -14,10 +14,19 @@ function agregarTarea(){
 //Creo el elemento en la lista
 let nuevaTarea = document.createElement("li");
 nuevaTarea.textContent = tarea + " ";
+nuevaTarea.style.fontFamily="calibri";
+nuevaTarea.style.fontWeight="800";
+nuevaTarea.style.color= "white";
+nuevaTarea.style.listStyleType="none";
 
 //Creo el boton de eliminar
 let botonEliminar = document.createElement("button");
 botonEliminar.textContent = "Eliminar"
+botonEliminar.style.backgroundColor = "rgb(228, 231, 15)";
+botonEliminar.style.borderRadius= "20px";
+botonEliminar.style.padding="10px";
+botonEliminar.style.fontFamily="calibri";
+botonEliminar.style.fontWeight= "800";
 botonEliminar.onclick = function() {nuevaTarea.remove();}
 
 //Concateno el elemento de la lista con el boton de eliminar
@@ -30,3 +39,6 @@ document.getElementById("listaTareas").appendChild(nuevaTarea);
 document.getElementById("texto").value = "";
 
 }
+
+var addTarea = document.querySelector(".add");
+addTarea.addEventListener("click",agregarTarea);
